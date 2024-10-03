@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ArtVerse</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #f6f5f7;
+      color: #333;
+    }
+
+    h1, h2 {
+      margin-bottom: 20px;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    /* Navbar Styles */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+      background-color: #fff;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .logo h1 {
+      font-size: 24px;
+      color: #5995fd;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      align-items: center;
+    }
+
+    .nav-links li {
+      margin-left: 20px;
+    }
+
+    .nav-links a {
+      color: #333;
+      font-weight: 500;
+    }
+
+    /* Common Button Styles */
+    .btn {
+      border: none;
+      padding: 12px 30px;
+      background-color: #00008B;
+      color: #fff;
+      text-transform: uppercase;
+      border-radius: 25px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .btn:hover {
+      background-color: #00008B;
+    }
+
+    /* Hero Section */
+    .hero-section {
+      height: 80vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: black;
+      text-align: center;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      width: 100%;
+    }
+
+    .hero-content h1 {
+      font-size: 48px;
+      font-weight: bold;
+      color: #fff;
+    }
+
+    .hero-content p {
+      font-size: 18px;
+      margin: 20px 0;
+    }
+
+    /* Food Categories Section */
+    .food-categories {
+      padding: 50px 20px;
+      text-align: center;
+      background-color: #fff;
+    }
+
+    .categories-container {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 30px;
+    }
+
+    .hero-description {
+      margin-top: 100px;
+    }
+
+    .category-card {
+      text-align: center;
+    }
+
+    .category-card img {
+      width: 150px;
+      border-radius: 10px;
+      margin-bottom: 10px;
+    }
+
+    /* Top Restaurants Section */
+    .top-restaurants {
+      padding: 50px 20px;
+      text-align: center;
+    }
+
+    .restaurants-container {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 30px;
+    }
+
+    .restaurant-card {
+      text-align: center;
+    }
+
+    .restaurant-card img {
+      width: 150px;
+      border-radius: 10px;
+      margin-bottom: 10px;
+    }
+
+    /* Footer Section */
+    footer {
+      padding: 20px;
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+    }
+
+    /* Responsive Styles */
+    @media (max-width: 940px) {
+      .categories-container,
+      .restaurants-container {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .category-card,
+      .restaurant-card {
+        margin-bottom: 20px;
+      }
+      
+      .navbar {
+        flex-direction: column;
+      }
+
+      .nav-links {
+        flex-direction: column;
+        margin-top: 20px;
+      }
+
+      .nav-links li {
+        margin-bottom: 10px;
+        margin-left: 0;
+      }
+
+      .hero-description {
+        margin-top: 80px;
+      }
+	.hero-section {
+  background-size: cover; /* Scales the image to cover the entire container */
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  height: 80vh; /* Sets the height of the hero section */
+  width: 100%; /* Ensures the section spans the full width of the viewport */
+}
+
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <div class="navbar">
+    <div class="logo">
+      <h1>ArtVerse</h1>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Menu</a></li>
+      <li><a href="#">Contact</a></li>
+      <li><a href="SignupPage.html" class="btn">Sign In</a></li>
+<li><a href="AdminHomePage.html" class="btn">Admin Login</a></li>
+    </ul>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="hero-section" style="background-image: url('images/ArtVerse.png');">
+    <div class="hero-content">
+      
+      
+    </div>
+  </section>
+
+  <!-- Food Categories Section -->
+  <section class="food-categories">
+    <h2>Famous Artist all time.</h2>
+    <div class="categories-container">
+      <div class="category-card">
+        <img src="images/Ram_kumar.jpg" alt="Indian.">
+        <h3>Indian</h3>
+      </div>
+      <div class="category-card">
+        <img src="images/chenYifei.jpeg" alt="Japanese">
+        <h3>Chinese</h3>
+      </div>
+      <div class="category-card">
+        <img src="images/lvanAiva.jpeg" alt="American">
+        <h3>Russian</h3>
+      </div>
+      <div class="category-card">
+        <img src="images/julius.jpeg" alt="Russian">
+        <h3>American</h3>
+      </div>
+    </div>
+  </section>
+
+  <!-- Top Restaurants Section -->
+  <section class="top-restaurants">
+    <h2>Popular Art Themes</h2>
+    <div class="categories-container">
+      <div class="category-card">
+        <img src="images/abstract.jpeg" alt="Burger">
+        <h3>Abstract</h3>
+      </div>
+      <div class="category-card">
+        <img src="images/wildLife.jpeg" alt="Pizza">
+        <h3>Wild Life</h3>
+      </div>
+      <div class="category-card">
+        <img src="images/arts.jpeg" alt="Sushi">
+        <h3>Emotions</h3>
+      </div>
+      <div class="category-card">
+        <img src="images/romantic.jpeg" alt="Desserts">
+        <h3>Romantic</h3>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer>
+    <p>&copy; 2024 ArtVerse. All rights reserved.</p>
+  </footer>
+</body>
+</html>
