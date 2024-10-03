@@ -1,0 +1,152 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Header styles */
+header {
+    background-color: #007bff;
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+/* Navigation styles */
+nav {
+    margin: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin-right: 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+    background-color: #0056b3;
+    border-radius: 5px;
+}
+
+nav ul li a:hover {
+    background-color: #003f7f;
+}
+
+/* Main content styles */
+main {
+    padding: 20px;
+}
+
+section {
+    background: #e3f2fd;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Metrics section styles */
+.metrics {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.metric {
+    background-color: #42a5f5;
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+    text-align: center;
+    flex: 1;
+    margin: 0 5px;
+}
+
+.metric:hover {
+    transform: none; /* Remove hover effect for metric */
+}
+
+/* Table styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+table th, table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+table th {
+    background-color: #90caf9;
+}
+
+table td {
+    background-color: #e3f2fd;
+}
+
+/* Button styles */
+button {
+    background-color: #007bff; /* Blue button */
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.2s ease-in-out; /* Transition added for hover */
+}
+
+/* Hover effect for dashboard buttons only */
+button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    transform: scale(1.1); /* Slightly enlarge button on hover */
+}
+
+/* Additional styling for responsiveness */
+@media (max-width: 768px) {
+    .metrics {
+        flex-direction: column;
+    }
+
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+
+    /* Adjusting button and table styles for small screens */
+    button {
+        width: 100%; /* Make buttons full width on small screens */
+        margin: 5px 0; /* Add some margin for spacing */
+    }
+
+    table {
+        font-size: 14px; /* Smaller text size for tables */
+    }
+}

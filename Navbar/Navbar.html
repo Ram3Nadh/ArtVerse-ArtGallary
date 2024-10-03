@@ -1,0 +1,127 @@
+/* General Body Styling */
+        body {
+            background: white;
+            font-family: 'Open Sans', sans-serif;
+            margin: 0; /* Ensures no extra space at the top */
+            padding: 0;
+        }
+
+        /* Navbar Styles */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #ADD8E6;
+            padding: 10px 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            position: relative;
+            top: 0;
+            width: 100%; /* Ensures navbar spans full width */
+        }
+
+        .navbar-brand {
+            color: darkblue;
+            font-size: 20px; /* Decreased font size */
+            font-weight: bold;
+        }
+
+        .navbar-nav {
+            display: flex;
+            align-items: center;
+            margin: 0; /* Removes extra space */
+        }
+
+        .nav-item {
+            list-style: none;
+        }
+
+        .nav-link {
+            color: #333;
+            font-size: 13px; /* Decreased font size */
+            transition: background-color 0.3s, color 0.3s, transform 0.3s, border-radius 0.3s;
+            text-decoration: none;
+            margin-left: 15px; /* Reduced spacing between nav items */
+            padding: 8px 12px; /* Decreased padding for consistent size */
+            display: inline-block; /* Ensure links are displayed correctly */
+        }
+
+        .nav-link:hover {
+            background-color: #87CEEB;
+            color: darkblue;
+            transform: scale(1.1);
+            border-radius: 15px;
+        }
+
+        /* Search Bar */
+        .navbar .form-control {
+            border: 2px solid darkblue;
+            border-radius: 25px;
+            padding: 3px 6px; /* Decreased padding to reduce height */
+            color: #333;
+            width: 300px; /* Adjusted width to fit smaller buttons */
+            margin-right: 13px; /* Space between search bar and button */
+            vertical-align: middle; /* Ensures the search bar aligns with nav items */
+            font-size: 12px; /* Decreased font size for the input */
+        }
+
+        .navbar .form-control:focus {
+            border-color: #00008b;
+            color: darkblue;
+        }
+
+        /* Button Styles for Sign Up / Sign In */
+        .navbar-nav .nav-item .nav-link.btn {
+            background-color: darkblue; /* Match the Home button's background */
+            color: #fff; /* Text color */
+            border-radius: 25px; /* Rounded corners */
+            padding: 4px 10px; /* Decreased padding for buttons */
+            font-size: 14px; /* Decreased font size */
+            transition: background-color 0.3s, color 0.3s, transform 0.3s; /* Smooth transition effects */
+            display: inline-block; /* Ensure button is displayed correctly */
+        }
+
+        .navbar-nav .nav-item .nav-link.btn:hover {
+            background-color: #00008b; /* Darker shade on hover */
+            color: #fff; /* Ensure text remains white on hover */
+            transform: scale(1.05); /* Slightly increase size on hover */
+        }
+
+        /* Increased Button Margin */
+        .navbar-nav .nav-item .nav-link {
+            margin-left: 15px; /* Reduced button margin */
+        }
+
+        /* Resetting default margins and padding to prevent spacing issues */
+        ul, li {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Button Reset to Maintain Consistency Across Pages */
+        .nav-link, .nav-link.btn {
+            box-sizing: border-box; /* Ensures consistent sizing */
+            white-space: nowrap; /* Prevents text wrapping */
+            line-height: normal; /* Consistent line height */
+        }
+
+        /* Extra Reset Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Media Query for Responsive Design */
+        @media (max-width: 768px) {
+            .navbar .form-control {
+                width: 200px; /* Adjust search bar width for smaller screens */
+            }
+            .nav-link {
+                font-size: 12px; /* Reduce font size on smaller screens */
+                padding: 6px 10px; /* Adjust padding */
+            }
+            .navbar-nav .nav-item .nav-link.btn {
+                font-size: 12px; /* Adjust button size */
+                padding: 3px 8px; /* Adjust button padding */
+            }
+        }
